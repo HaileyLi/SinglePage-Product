@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tide Prod</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Righteous&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
+    <script src="js/index.js"></script>
+    <script src="js/slider.js"></script>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="header-row">
+            <div class="logo-img">
+                <img src="imgs/logo.png" alt="logo" />
+            </div>
+            <div class="nav-row">
+                <ul>
+                    <li><a href="/">How to wash clothes</a></li>
+                    <li><a href="/">About Us</a></li>
+                    <li><a href="/">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-curve"></div>
+        <h1 class="upper-h">TIDE'S IN</h1>
+        <h1 class="lower-h">DIRT'S OUT</h1>
+        <div class="video-container">
+            <video src="imgs/video.mp4" autoplay="autoplay" loop="loop" muted="muted" playsinline=""
+                class="video-bg"></video>
+        </div>
+    </section>
+    <section class="prod-compare">
+        <svg viewBox="0 0 1440 1251.18" xmlns="http://www.w3.org/2000/svg" class="absolute curve"
+            style="transform: scaleY(0.5);z-index:-1;">
+            <path
+                d="M1247.42,51.72c-83.38,48.58-218.82,83.9-337.35,71C744.83,104.36,659.68,18.71,492.24,3.13c-156-14.38-380.9,22.33-492.24,78V1141.67c102.1,49.65,257.77,128.17,396.45,105.49,148.79-24.5,222.31-148.94,369-176.07,5.42-1,11-1.74,16.64-2.29h52.25c97.27,7.68,215.45,51.44,312.45,54.86,121.46,4.27,192.6-14,293.2-45V28C1383.46,5.8,1315.17,12.24,1247.42,51.72Z"
+                fill="#fbbb3f"></path>
+        </svg>
+        <h2 class="subsec">WE MAKE DIFFERENCES</h2>
+        <div class="diff-container">
+            <div class="pic-container">
+                <div class="overflow-before">
+                    <img class="prod-before" src="imgs/BEFORE.png" />
+                </div>
+                <div class="overflow-after">
+                    <img class="prod-after" src="imgs/AFTER.png" />
+                </div>
+            </div>
+
+            <div class="compare-bar">
+                <div class="circle" id="dragele">
+                    <div class="left-half" onclick="gotoBefore()"></div>
+                    <div class="right-half" onclick="gotoAfter()"></div>
+                </div>
+                <div class="bar" id="bar"></div>
+            </div>
+            <div class="left-exp">
+                <div class="before-emoji">
+                    <img src="./imgs/before-emoji.png" />
+                </div>
+                <p class="before-text">BEFORE</p>
+            </div>
+            <div class="right-exp">
+                <div class="after-emoji">
+                    <img src="./imgs/after-emoji.png" />
+                </div>
+                <p class="after-text">AFTER</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="order">
+        <h2 class="subsec">ORDER NOW</h2>
+        <div class="prod-container">
+            <div class="left-sec">
+                <div class="sec hero-sec">
+                    <div class="img-container fade">
+                        <div class="hero-img"></div>
+                    </div>
+                    <div class="img-container fade">
+                        <div class="hero-img"></div>
+                    </div>
+                    <div class="img-container fade">
+                        <div class="hero-img"></div>
+                    </div>
+                    <div class="switch-container">
+                        <a class="prev" onclick="addSlides(-1)">
+                            &#10094;</a>
+                        <a class="next" onclick="addSlides(1)">&#10095;
+                        </a>
+                    </div>
+                    <div class="slider-container">
+
+                        <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="right-sec">
+                <div class="order-card">
+                    <div class="container">
+                        <h3 class="prod-title">Product Title</h3>
+                        <div class="review">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                        </div>
+                        <div class="prod-notes">Product notes Product notes Product notes Product notes</div>
+                        <div class="price">$19.99</div>
+                    </div>
+                    <div class="details">
+                        <div class="subtitle">Quantity</div>
+                        <div class="number-control">
+                            <span class="input-number-decrement">–</span>
+                            <input class="input-number" type="text" value="1">
+                            <span class="input-number-increment">+</span>
+                        </div>
+
+                    </div>
+                    <div class="btn">Order Now</div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <div class="footer-bar">
+
+        <span>
+            &copy; 2020 xxx All rights reserved.
+        </span>
+
+        <span>
+            <ul>
+                <li><a href="#" target="_blank"><img src="imgs/insicon.png" alt="ins-icon"></a></li>
+                <li><a href="#" target="_blank"><img src="imgs/tticon.png" alt="twitter-icon"></a href="#"></li>
+                <li><a href="#" target="_blank"><img src="imgs/fbicon.png" alt="fb-icon"></a href="#"></li>
+            </ul>
+        </span>
+        <span>
+            Hailey Li
+        </span>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
